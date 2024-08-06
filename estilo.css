@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(fondo.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg{
+    background-color: rgba(0, 0, 0,70%);
+}
+.contenedor{
+    padding: 10px 0;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+.menu h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    padding: 0 20px;
+    font-size: 20px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+.navbar ul li a:hover{
+    color: aqua;
+}
+#menu{
+    display: none;
+}
+.icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    padding: 80px 0;
+}
+.flex span{
+    color: #3269D9;
+    font-weight: 600;
+    font-size: 60px;
+}
+.flex span:hover{
+    color: aqua;
+}
+.grid{
+    display: grid;
+    padding: 50px 0;
+}
+.grid h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+.flex1{
+    display: flex;  
+    text-align: center;
+}
+.contenido{
+    width: 100%;
+    padding: 30px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.contenido :hover{
+    border-radius: 20px;  
+    transform: translateY(-5%);
+}
+.contenido img{
+    border-radius: 20px;
+    max-width: 100%
+}
+.contenido a{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.contenido a:hover{
+    color: aqua;
+}
+main{
+    display: grid;
+    justify-content: center;
+}
+.grid1{
+    padding: 50px 0;
+}
+.grid1 h1{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+.flex2{
+    margin: 20px;
+}
+.flex2 h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.input {
+    background-color: #212121;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+ul {
+    list-style: none;
+}
+.example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+}
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+}
+.example-2 .icon-content a:hover {
+    color: white;
+}
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+footer{
+    display: grid;
+}
+.flex3{
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex4{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+button {
+    border: none;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px)
+}
+   
+button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+}
+   
+button:hover:after {
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+   
+button span {
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    left: 50%;
+    top: 39%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    transition: all 2s ease;
+}
+   
+button:hover span {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+   
+button:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+}
+   
+button:hover:before {
+    width: 100%;
+}
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #4c00ff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000; 
+    border-radius: 50%;
+}  
+   
+
+@media(max-width:700px){
+    .menu{
+        padding: 20px;
+        position: relative;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(50, 105, 217,80%);
+        display: none;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 20px 0;
+        padding-left: 20px;
+    }
+    .menu .navbar ul li a{
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+    }
+    .menu .navbar ul li a:hover{
+        color: aqua;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .flex{
+        flex-direction: column;
+        padding: 0;
+    }
+    .flex1{
+        flex-direction: column;
+    }
+    .flex2{
+        width: 300px;
+        margin: 20px 0;
+    }
+    .flex2 textarea{
+        max-width: 100%;
+    }
+    .contenido{
+        width: 100%;
+        margin: 0;
+    }
+    .contenido img{
+        max-width: 100%;
+    }
+    .flex3{
+        flex-direction: column;
+    }
+}
